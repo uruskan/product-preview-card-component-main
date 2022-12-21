@@ -1,80 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
 *{
-
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: 0;
-
+    
 }
-
+html{
+    background-color: hsl(30, 38%, 92%);
+}
 body{
-    min-height: 100vh;
     display: flex;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
     place-content: center;
-    margin: auto;
-    background-color: hsl(30, 38%, 92%)
 }
 
 footer{
     position: absolute;
     bottom: 0;
-    display: flex;
-    place-content: center;
-    text-align: center;
+    display: none;
 }
- main{
-    display: flex;
-    
-    max-width: 100%;
-    max-height: 100%;
-    place-content: space-around;
-    margin: auto;
- }
 
- .card{
- display: grid;
- grid-template-columns: 1fr 1fr;
- max-width: 40%;
+main{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    margin: 1rem;
+    background-color: hsl(30, 38%, 92%);
+    max-width: 100%;
+    
+    
 }
+
+
 
 
 .container1{
     display: flex;
+    background-color: white;
     max-width: 100%;
+    gap: 1rem;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
     max-height: 100%;
-    flex-shrink: 1;
+    
+    
     
 }
-
-
 .container1 img{
-    display: flex;
+    display: block;
     max-width: 100%;
-    
-    min-width: auto;
-    border-bottom-left-radius: 5%;
-    border-top-left-radius: 5%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
     
 }
 
 .container2{
     display: flex;
-    flex-flow: column nowrap;
-    padding: 1rem;
-    gap: 3rem;
     max-width: 100%;
-    max-height: 100%;
-    padding: 5rem;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
     background-color: hsl(0, 0%, 100%);
-    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
     border-bottom-right-radius: 10%;
+    
+    
+    
 }
 
 .container2 .perfume{
+    display: flex;
     color: hsl(228, 12%, 48%);
     letter-spacing: .3rem;
     font-family: "Montserrat", sans-serif;
@@ -82,11 +79,14 @@ footer{
 }
 
 .container2 .title{
+    display: flex;
     font-family: "Fraunces", sans-serif;
     font-weight: 700;
+    
 }
 
 .container2 .aciklama {
+    display: flex;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: hsl(228, 12%, 48%);
@@ -132,4 +132,39 @@ footer{
     cursor: grab;
     
 }
-
+@media (min-width:376px){
+    main{
+        flex-direction: row;
+        max-width: 40%;
+        
+        place-content: center;
+        margin: auto;
+    }
+    .container1 img{
+        content:url(./images/image-product-desktop.jpg);
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 5%;
+        border-bottom-left-radius: 5%;
+        max-width: 100%;
+        
+        
+    }
+    .container1{
+        border-bottom-left-radius: 10%;
+        max-width: 100%;
+        
+    }
+    .container2{
+        border-bottom-right-radius: 5%;
+        border-top-right-radius: 5%;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        max-width: 50%;
+        
+        
+        
+        
+    }
+  
+}
