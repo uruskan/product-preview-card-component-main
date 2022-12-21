@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    place-content: center;
+    margin: auto;
+    background-color: hsl(30, 38%, 92%)
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    place-content: center;
+    text-align: center;
+}
+ main{
+    display: flex;
+    
+    max-width: 100%;
+    max-height: 100%;
+    place-content: space-around;
+    margin: auto;
+ }
+
+ .card{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ max-width: 40%;
+}
+
+
+.container1{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    flex-shrink: 1;
+    
+}
+
+
+.container1 img{
+    display: flex;
+    max-width: 100%;
+    
+    min-width: auto;
+    border-bottom-left-radius: 5%;
+    border-top-left-radius: 5%;
+    
+}
+
+.container2{
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    gap: 3rem;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.container2 .perfume{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: .3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.container2 .title{
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+}
+
+.container2 .aciklama {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5rem;
+    
+}
+.container2 .price{
+    display: flex;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+.container2 .price .discount-price{
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+.container2 button{
+    display: flex;
+    
+    flex-flow: row nowrap;
+    gap: 1rem;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    background-color:hsl(158, 36%, 37%); 
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    border: hsl(158, 36%, 37%);
+    cursor: grab;
+    
+}
+
