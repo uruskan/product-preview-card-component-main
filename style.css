@@ -132,6 +132,10 @@ main{
     cursor: grab;
     
 }
+.container2 button h2{
+    display: block;
+}
+
 .container2 button:hover , .container2 button:focus{
 
     background-color: hsl(212, 21%, 14%);
