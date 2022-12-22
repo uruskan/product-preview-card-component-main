@@ -132,6 +132,11 @@ main{
     cursor: grab;
     
 }
+.container2 button:hover , .container2 button:focus{
+
+    background-color: hsl(212, 21%, 14%);
+    transition: 0.5s;
+}
 @media (min-width:376px){
     main{
         flex-direction: row;
