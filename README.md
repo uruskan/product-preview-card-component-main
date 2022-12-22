@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/uruskan/product-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://uruskan.github.io/product-preview-card-component-main/)
+- Solution URL: [Github Repo](https://github.com/uruskan/product-preview-card-component-main)
+- Live Site URL: [Live Site](https://uruskan.github.io/product-preview-card-component-main/)
 
 ## My process
 
